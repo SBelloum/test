@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein erstes GitHub HTML-Projekt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .step {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wie ich meine erste HTML-Seite mit GitHub veröffentlicht habe</h1>
+    
+    <div class="step">
+        <h2>1. HTML-Datei erstellen</h2>
+        <p>Ich habe eine einfache HTML-Datei namens <code>index.html</code> erstellt:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Meine erste Seite&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hallo Welt!&lt;/h1&gt;
+    &lt;p&gt;Meine erste veröffentlichte Webseite.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+
+    <div class="step">
+        <h2>2. GitHub Repository erstellen</h2>
+        <p>Ich habe auf GitHub.com ein neues Repository angelegt:</p>
+        <ul>
+            <li>Name: <code>mein-erstes-projekt</code></li>
+            <li>Öffentlich (public)</li>
+            <li>Mit <code>README.md</code> initialisieren</li>
+        </ul>
+    </div>
+
+    <div class="step">
+        <h2>3. Dateien hochladen</h2>
+        <p>Mit diesen Befehlen habe ich meine Dateien hochgeladen:</p>
+        <pre><code>git clone https://github.com/mein-name/mein-erstes-projekt.git
+cd mein-erstes-projekt
+git add index.html
+git commit -m "Meine erste HTML-Seite"
+git push origin main</code></pre>
+    </div>
+
+    <div class="step">
+        <h2>4. GitHub Pages aktivieren</h2>
+        <p>In den Repository-Einstellungen:</p>
+        <ol>
+            <li>Auf <strong>Settings</strong> klicken</li>
+            <li>Links auf <strong>Pages</strong> gehen</li>
+            <li>Branch <code>main</code> auswählen</li>
+            <li>Speichern</li>
+        </ol>
+        <p>Nach wenigen Minuten war meine Seite live unter:<br>
+        <code>https://mein-name.github.io/mein-erstes-projekt/</code></p>
+    </div>
+
+    <footer>
+        <p>Erstellt mit ❤️ und GitHub Pages</p>
+    </footer>
+</body>
+</html>
